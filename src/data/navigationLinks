@@ -1,0 +1,8 @@
+const navigationLinks = [
+  { id: 1, title: 'Dashboard', path: '/dashboard', icon: 'dashboard' },
+  { id: 2, title: 'Appointments', path: '/appointments', icon: 'calendar' },
+  { id: 3, title: 'Health Records', path: '/records', icon: 'file-medical' },
+  { id: 4, title: 'Settings', path: '/settings', icon: 'cog' },
+];
+
+export default navigationLinks;

@@ -1,0 +1,86 @@
+.dashboard-overview {
+  padding: 1.5rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-overview__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.dashboard-overview__description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-overview__metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.metric-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.metric-card__value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2563eb; /* Blue for heart rate */
+}
+
+.metric-card__value:nth-child(2) {
+  color: #16a34a; /* Green for steps */
+}
+
+.metric-card__value:nth-child(3) {
+  color: #f97316; /* Orange for calories */
+}
+
+.metric-card__info {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.dashboard-overview__image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-overview__heart-icon {
+  width: 8rem;
+  height: 8rem;
+  color: #ef4444; /* Red for heart icon */
+}
+
+.dashboard-overview__image-caption {
+  text-align: center;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-overview__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-overview__metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
